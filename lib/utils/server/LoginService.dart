@@ -11,7 +11,6 @@ import 'dart:convert';
 import 'package:edus_tutor/controller/system_controller.dart';
 import 'package:edus_tutor/utils/FunctinsData.dart';
 import 'package:edus_tutor/utils/apis/Apis.dart';
-import 'package:edus_tutor/utils/exception/DioException.dart';
 
 class Login {
   final String email;

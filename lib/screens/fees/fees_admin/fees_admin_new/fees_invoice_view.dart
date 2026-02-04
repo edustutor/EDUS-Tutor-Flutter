@@ -470,7 +470,7 @@ class _FeeInvoiceDetailsViewState extends State<FeeInvoiceDetailsView> {
     );
   }
 
-  getTotalFine() {
+  double getTotalFine() {
     double amount = 0.0;
     for (var element in feeInvoiceDetailsModel.invoiceDetails!) {
       amount += (element.fine ?? 0);
@@ -478,7 +478,7 @@ class _FeeInvoiceDetailsViewState extends State<FeeInvoiceDetailsView> {
     return amount;
   }
 
-  getTotalWeiver() {
+  double getTotalWeiver() {
     double amount = 0.0;
     for (var element in feeInvoiceDetailsModel.invoiceDetails!) {
       amount += (element.weaver ?? 0);
@@ -486,7 +486,7 @@ class _FeeInvoiceDetailsViewState extends State<FeeInvoiceDetailsView> {
     return amount;
   }
 
-  getTotalPaidAmount() {
+  double getTotalPaidAmount() {
     double amount = 0.0;
     for (var element in feeInvoiceDetailsModel.invoiceDetails!) {
       amount += (element.subTotal ?? 0);
@@ -494,7 +494,7 @@ class _FeeInvoiceDetailsViewState extends State<FeeInvoiceDetailsView> {
     return amount;
   }
 
-  getGrandTotalAmount() {
+  double getGrandTotalAmount() {
     double amount = 0.0;
 
     for (var element in feeInvoiceDetailsModel.invoiceDetails!) {
@@ -503,7 +503,7 @@ class _FeeInvoiceDetailsViewState extends State<FeeInvoiceDetailsView> {
     return amount;
   }
 
-  getDueBalance() {
+  double getDueBalance() {
     double amount = 0.0;
 
     for (var element in feeInvoiceDetailsModel.invoiceDetails!) {

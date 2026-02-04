@@ -70,7 +70,7 @@ class TransportRow extends StatelessWidget {
     );
   }
 
-  showAlertDialog(BuildContext context) {
+  void showAlertDialog(BuildContext context) {
     showDialog<void>(
       barrierDismissible: true,
       context: context,

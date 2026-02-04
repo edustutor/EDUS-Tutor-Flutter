@@ -135,9 +135,7 @@ class _LeaveListStudentState extends State<LeaveListStudent> {
                                     ),
                                     Expanded(
                                       child: Text(
-                                        '${snapshot.data?.studentMyLeave[index].days.toString()}'
-                                                ' ' +
-                                            "days".tr,
+                                        '${snapshot.data?.studentMyLeave[index].days.toString()} ${"days".tr}',
                                         maxLines: 1,
                                         style: Theme.of(context)
                                             .textTheme
@@ -478,7 +476,7 @@ class _LeaveListStudentState extends State<LeaveListStudent> {
     }
   }
 
-  showAlertDialog(BuildContext context, LeaveAdmin data) {
+  void showAlertDialog(BuildContext context, LeaveAdmin data) {
     showDialog<void>(
       barrierDismissible: true,
       context: context,

@@ -17,7 +17,6 @@ import 'package:edus_tutor/utils/Utils.dart';
 import 'package:edus_tutor/utils/apis/Apis.dart';
 import 'package:edus_tutor/utils/model/GlobalClass.dart';
 import 'package:edus_tutor/utils/model/Student.dart';
-import 'package:edus_tutor/utils/widget/ShimmerListWidget.dart';
 import 'package:edus_tutor/utils/widget/SubjectStudentAttendanceRow.dart';
 
 import '../../../utils/model/SubjectAttendance.dart';

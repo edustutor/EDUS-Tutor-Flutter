@@ -169,12 +169,7 @@ class _HomeState extends State<Home> {
     //init settings for android
     var initializationSettingsAndroid =
         const AndroidInitializationSettings('@mipmap/ic_launcher');
-    var initializationSettingsIOS = DarwinInitializationSettings(
-        onDidReceiveLocalNotification:
-            (int id, String? title, String? body, String? payload) async {
-      didReceiveLocalNotificationSubject.add(ReceivedNotification(
-          id: id, title: title, body: body, payload: payload));
-    });
+    var initializationSettingsIOS = const DarwinInitializationSettings();
     var initializationSettings = InitializationSettings(
         android: initializationSettingsAndroid, iOS: initializationSettingsIOS);
     flutterLocalNotificationsPlugin.initialize(
@@ -213,7 +208,7 @@ class _HomeState extends State<Home> {
     isTapped = false;
   }
 
-  notificationSubscription() async {
+  Future<void> notificationSubscription() async {
     NotificationSettings settings = await messaging.requestPermission(
       alert: true,
       announcement: false,
@@ -497,7 +492,7 @@ class _HomeState extends State<Home> {
     );
   }
 
-  buildNotificationDialog(context, String id) {
+  void buildNotificationDialog(context, String id) {
     showDialog<void>(
       barrierDismissible: true,
       context: context,
@@ -752,7 +747,7 @@ class _HomeState extends State<Home> {
     );
   }
 
-  showAlertDialog(BuildContext context) {
+  void showAlertDialog(BuildContext context) {
     Widget cancelButton = TextButton(
       child: Text(
         "Cancel",
@@ -808,7 +803,7 @@ class _HomeState extends State<Home> {
     );
   }
 
-  showStudentProfileDialog(BuildContext context) {
+  void showStudentProfileDialog(BuildContext context) {
     showDialog<void>(
       barrierDismissible: true,
       context: context,
@@ -904,7 +899,7 @@ class _HomeState extends State<Home> {
     );
   }
 
-  showOthersProfileDialog(BuildContext context) {
+  void showOthersProfileDialog(BuildContext context) {
     showDialog<void>(
       barrierDismissible: true,
       context: context,
@@ -1137,8 +1132,8 @@ class _HomeState extends State<Home> {
     await showDialog(
       context: context,
       builder: (BuildContext context) => CupertinoAlertDialog(
-        title: title != null ? Text(title) : null,
-        content: body != null ? Text(body) : null,
+        title: Text(title),
+        content: Text(body),
         actions: const [],
       ),
     );

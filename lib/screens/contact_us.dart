@@ -1,7 +1,5 @@
 import 'package:edus_tutor/utils/widget/Line.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 import '../config/app_size.dart';
 import '../utils/CustomAppBarWidget.dart';

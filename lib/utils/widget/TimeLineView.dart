@@ -125,7 +125,7 @@ class TimeLineView extends StatelessWidget {
     );
   }
 
-  showDownloadAlertDialog(BuildContext context) {
+  void showDownloadAlertDialog(BuildContext context) {
     // set up the buttons
     Widget cancelButton = TextButton(
       child: const Text("No"),

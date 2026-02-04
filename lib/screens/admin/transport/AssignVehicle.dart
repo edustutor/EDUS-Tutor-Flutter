@@ -284,7 +284,7 @@ class _AssignVehicleState extends State<AssignVehicle> {
     }
   }
 
-  assignVehicle() async {
+  Future<bool> assignVehicle() async {
     setState(() {
       isResponse = true;
     });

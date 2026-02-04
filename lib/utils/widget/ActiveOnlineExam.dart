@@ -173,7 +173,7 @@ class ActiveOnlineExamRow extends StatelessWidget {
     }
   }
 
-  getStatus(BuildContext context, dynamic isRunning, dynamic isClosed,
+  Widget getStatus(BuildContext context, dynamic isRunning, dynamic isClosed,
       dynamic isWaiting) {
     if (isClosed == "1") {
       return Container(

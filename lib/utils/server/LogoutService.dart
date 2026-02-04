@@ -12,7 +12,7 @@ import 'package:edus_tutor/utils/Utils.dart';
 import 'package:edus_tutor/utils/apis/Apis.dart';
 
 class LogoutService {
-  logoutDialog() {
+  AlertDialog logoutDialog() {
     String? token;
     // set up the buttons
     Widget cancelButton = TextButton(

@@ -237,7 +237,7 @@ class _StudentWalletTransactionsState extends State<StudentWalletTransactions> {
     );
   }
 
-  getStatus(String status) {
+  Container getStatus(String status) {
     return Container(
       alignment: Alignment.center,
       decoration: BoxDecoration(
@@ -260,7 +260,7 @@ class _StudentWalletTransactionsState extends State<StudentWalletTransactions> {
     );
   }
 
-  getDialog() {
+  void getDialog() {
     Get.bottomSheet(
       CustomBottomSheet(
         title: "Add Balance",

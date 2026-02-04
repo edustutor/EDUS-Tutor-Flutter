@@ -10,6 +10,8 @@ class RecordedClassesScreen extends StatelessWidget {
   final RecordedClassController _controller =
       Get.put(RecordedClassController(baseUrl: 'https://app.edustutor.com'));
 
+  RecordedClassesScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

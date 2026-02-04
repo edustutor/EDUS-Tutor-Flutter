@@ -246,7 +246,7 @@ class _CustomCheckBoxGroupState extends State<CustomCheckBoxGroup> {
     return _buildCheckBoxButtons();
   }
 
-  _buildCheckBoxButtons() {
+  SingleChildRenderObjectWidget _buildCheckBoxButtons() {
     if (widget.horizontal) {
       return SizedBox(
         height: widget.height * ((widget.buttonLables?.length ?? 0) * 1.5) +
@@ -282,5 +282,6 @@ class _CustomCheckBoxGroupState extends State<CustomCheckBoxGroup> {
         ),
       );
     }
+    return const SizedBox.shrink();
   }
 }

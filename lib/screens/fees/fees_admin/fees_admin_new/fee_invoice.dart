@@ -126,7 +126,7 @@ class _FeesInvoiceScreenState extends State<FeesInvoiceScreen> {
                         textTheme: Theme.of(context).textTheme.copyWith(
                             titleLarge: Theme.of(context).textTheme.titleLarge),
                         appBarTheme: const AppBarTheme(
-                          color: Colors.white,
+                          backgroundColor: Colors.white,
                           elevation: 0,
                         ),
                         iconTheme: IconThemeData(

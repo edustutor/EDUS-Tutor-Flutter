@@ -464,7 +464,7 @@ class _StudentAttendanceScreenState extends State<StudentAttendanceScreen> {
     return status;
   }
 
-  getStatusColor(String status) {
+  Color getStatusColor(String status) {
     switch (status) {
       case 'P':
         return Colors.green;

@@ -45,7 +45,7 @@ class _BookListRowState extends State<BookListRow>
     super.dispose();
   }
 
-  showAlertDialog(BuildContext context) {
+  void showAlertDialog(BuildContext context) {
     showDialog<void>(
       barrierDismissible: true,
       context: context,

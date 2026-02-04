@@ -70,7 +70,7 @@ class _AdminFeesListRowState extends State<AdminFeesListRow> {
     );
   }
 
-  showAlertDialog(BuildContext context) {
+  void showAlertDialog(BuildContext context) {
     titleController = TextEditingController();
     descripController = TextEditingController();
     titleController?.text = widget.adminFees.name ?? '';

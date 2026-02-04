@@ -24,7 +24,7 @@ class AppTranslations {
     return appTranslations;
   }
 
-  get currentLanguage => locale.languageCode;
+  String get currentLanguage => locale.languageCode;
 
   String text(String key) {
     return _localisedValues?[key] ?? "$key not found";

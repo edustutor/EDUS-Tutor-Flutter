@@ -163,7 +163,7 @@ class StudyMaterialListRow extends StatelessWidget {
     );
   }
 
-  showAlertDialog(BuildContext context) {
+  void showAlertDialog(BuildContext context) {
     showDialog<void>(
       barrierDismissible: true,
       context: context,
@@ -247,7 +247,7 @@ class StudyMaterialListRow extends StatelessWidget {
     );
   }
 
-  showDownloadAlertDialog(BuildContext context, String title) {
+  void showDownloadAlertDialog(BuildContext context, String title) {
     // set up the buttons
     Widget cancelButton = TextButton(
       child: Text(

@@ -207,7 +207,7 @@ class _FeesRowState extends State<FeesRow> {
     );
   }
 
-  showAlertDialog(BuildContext context) {
+  void showAlertDialog(BuildContext context) {
     showDialog<void>(
       barrierDismissible: true,
       context: context,

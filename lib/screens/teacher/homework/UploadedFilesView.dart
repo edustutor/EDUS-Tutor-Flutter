@@ -9,7 +9,6 @@ import 'package:edus_tutor/screens/student/studyMaterials/StudyMaterialViewer.da
 import 'package:edus_tutor/utils/CustomAppBarWidget.dart';
 import 'package:edus_tutor/utils/apis/Apis.dart';
 import 'package:edus_tutor/utils/widget/Line.dart';
-import 'package:webview_flutter/webview_flutter.dart';
 
 // import 'package:edus_tutor/utils/pdf_flutter.dart';
 

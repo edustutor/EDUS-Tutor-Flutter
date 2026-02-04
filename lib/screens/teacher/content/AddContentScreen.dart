@@ -579,7 +579,7 @@ class _AddContentScreeenState extends State<AddContentScreeen> {
     }
   }
 
-  _studentListWidget(BuildContext context) {
+  FutureBuilder<dynamic> _studentListWidget(BuildContext context) {
     return FutureBuilder(
       future: classes,
       builder: (context, snapshot) {

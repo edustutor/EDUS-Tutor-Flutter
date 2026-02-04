@@ -140,7 +140,7 @@ class _AdminSettingsState extends State<AdminSettings> {
     );
   }
 
-  showChangeLanguageAlert(BuildContext context) {
+  void showChangeLanguageAlert(BuildContext context) {
     showDialog<void>(
       barrierDismissible: true,
       context: context,
@@ -190,7 +190,7 @@ class _AdminSettingsState extends State<AdminSettings> {
     );
   }
 
-  showAlertDialog(BuildContext context) {
+  void showAlertDialog(BuildContext context) {
     // set up the buttons
     Widget cancelButton = TextButton(
       child: const Text("Cancel"),

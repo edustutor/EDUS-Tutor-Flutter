@@ -15,12 +15,12 @@ class StuffLeaveListBloc {
 
   final _subject = BehaviorSubject<LeaveAdminList>();
 
-  getStaffLeaveList() async {
+  Future<void> getStaffLeaveList() async {
     LeaveAdminList list = await _repository.getStaffLeave(url, endPoint);
     _subject.sink.add(list);
   }
 
-  dispose() {
+  void dispose() {
     _subject.close();
   }
 

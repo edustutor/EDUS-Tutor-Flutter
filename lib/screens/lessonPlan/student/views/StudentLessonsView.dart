@@ -521,7 +521,7 @@ class _StudentLessonsViewState extends State<StudentLessonsView> {
     );
   }
 
-  showAlertDialog(BuildContext context, PlanDetails plan) {
+  void showAlertDialog(BuildContext context, PlanDetails plan) {
     List<String> topicNames = [];
     List<String> subTopicNames = [];
     List<String> ytLinks = [];
