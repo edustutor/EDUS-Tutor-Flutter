@@ -16,8 +16,7 @@ class ProfileRowList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-        child: _value != null
-            ? _value.contains('+') &&
+        child: _value.contains('+') &&
                         (_key.contains('Phone number') ||
                             _key.contains('Phone')) ||
                     _value.contains('@')
@@ -171,7 +170,6 @@ class ProfileRowList extends StatelessWidget {
                         ),
                       ),
                     ],
-                  )
-            : Container());
+                  ));
   }
 }

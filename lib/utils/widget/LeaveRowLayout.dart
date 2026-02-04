@@ -199,7 +199,7 @@ class _LeaveRowLayoutState extends State<LeaveRowLayout> {
     );
   }
 
-  showAlertDialog(BuildContext context) {
+  void showAlertDialog(BuildContext context) {
     showDialog<void>(
       context: context,
       barrierDismissible: true,
@@ -541,7 +541,7 @@ class _LeaveRowLayoutState extends State<LeaveRowLayout> {
     );
   }
 
-  showDownloadAlertDialog(BuildContext context, String title) {
+  void showDownloadAlertDialog(BuildContext context, String title) {
     // set up the buttons
     Widget cancelButton = TextButton(
       child: const Text("No"),

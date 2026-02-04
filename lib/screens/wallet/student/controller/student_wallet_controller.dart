@@ -4,7 +4,6 @@ import 'dart:io';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:edus_tutor/config/app_config.dart';
 import 'package:edus_tutor/controller/user_controller.dart';
 import 'package:dio/dio.dart' as dio;
 import 'package:edus_tutor/screens/wallet/student/model/Wallet.dart';

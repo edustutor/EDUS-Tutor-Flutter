@@ -95,9 +95,7 @@ ThemeData basicTheme() {
       primary: Color(0xFF053EFF), // Blue primary color
       onPrimary: Colors.white, // White text/icons on blue
       secondary: Color(0xFF053EFF), // Secondary blue
-      onSecondary: Colors.white, // White text/icons on secondary
-      background: Colors.white, // White background
-      onBackground: Colors.black, // Black text/icons on white
+      onSecondary: Colors.white, // Black text/icons on white
       surface: Colors.white, // White surface (e.g., cards)
       onSurface: Colors.black, // Black text/icons on surfaces
       error: Colors.red, // Error red

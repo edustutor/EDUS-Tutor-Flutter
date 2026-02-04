@@ -19,7 +19,7 @@ class CustomWidget extends StatefulWidget {
     required this.onSelect,
     required this.headline,
     required this.icon,
-  }) : assert(isSelected != null);
+  });
 
   @override
   _CustomWidgetState createState() => _CustomWidgetState();

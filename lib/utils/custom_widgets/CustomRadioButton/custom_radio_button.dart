@@ -247,7 +247,7 @@ class _CustomRadioButtonState extends State<CustomRadioButton> {
     return _buildRadioButtons();
   }
 
-  _buildRadioButtons() {
+  SingleChildRenderObjectWidget _buildRadioButtons() {
     if (widget.horizontal) {
       return SizedBox(
         height: widget.height * ((widget.buttonLables?.length ?? 0) * 1.5) +
@@ -283,5 +283,6 @@ class _CustomRadioButtonState extends State<CustomRadioButton> {
         ),
       );
     }
+    return const SizedBox.shrink();
   }
 }

@@ -261,7 +261,7 @@ class _ContentRowState extends State<ContentRow> {
     );
   }
 
-  showDeleteAlertDialog(BuildContext context) {
+  void showDeleteAlertDialog(BuildContext context) {
     // set up the buttons
     Widget cancelButton = TextButton(
       child: const Text("No"),
@@ -301,7 +301,7 @@ class _ContentRowState extends State<ContentRow> {
     );
   }
 
-  showDownloadAlertDialog(BuildContext context, title) {
+  void showDownloadAlertDialog(BuildContext context, title) {
     // set up the buttons
     Widget cancelButton = TextButton(
       child: const Text("No"),
@@ -405,7 +405,7 @@ class _ContentRowState extends State<ContentRow> {
     // progress = "Download Completed.Go to the download folder to find the file";
   }
 
-  getContentType(String contentType) {
+  String getContentType(String contentType) {
     if (contentType == "as") {
       return "Assignment";
     } else if (contentType == "st") {
@@ -415,5 +415,6 @@ class _ContentRowState extends State<ContentRow> {
     } else if (contentType == "ot") {
       return "Other Download";
     }
+    return 'N/A';
   }
 }

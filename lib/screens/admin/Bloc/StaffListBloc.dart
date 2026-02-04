@@ -14,12 +14,12 @@ class StaffListBloc {
 
   final _subject = BehaviorSubject<StaffList>();
 
-  getStaffList() async {
+  Future<void> getStaffList() async {
     StaffList list = await _repository.getStaffList(id);
     _subject.sink.add(list);
   }
 
-  dispose() {
+  void dispose() {
     _subject.close();
   }
 

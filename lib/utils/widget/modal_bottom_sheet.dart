@@ -15,8 +15,7 @@ class BottomSheet extends StatefulWidget {
       this.animationController,
       this.enableDrag = true,
       required this.onClosing,
-      required this.builder})
-      : assert(onClosing != null);
+      required this.builder});
 
   final AnimationController? animationController;
   final VoidCallback onClosing;
@@ -213,8 +212,9 @@ class _ModalBottomSheetRoute<T> extends PopupRoute<T> {
       removeTop: true,
       child: _ModalBottomSheet<T>(route: this),
     );
-    if (theme != null)
+    if (theme != null) {
       bottomSheet = Theme(data: theme ?? ThemeData(), child: bottomSheet);
+    }
     return bottomSheet;
   }
 }

@@ -93,7 +93,7 @@ Thank you!'''}) {
             title,
             style: const TextStyle(fontWeight: FontWeight.bold),
           ),
-          content: Container(
+          content: SizedBox(
             height: screenHeight(300, context),
             child: Column(
               children: [
@@ -164,7 +164,7 @@ Thank you!'''}) {
     return localisedValues[key] ?? key;
   }
 
-  static setHeader(String token) {
+  static Map<String, String> setHeader(String token) {
     Map<String, String> header = {
       'Content-type': 'application/json',
       'Accept': 'application/json',

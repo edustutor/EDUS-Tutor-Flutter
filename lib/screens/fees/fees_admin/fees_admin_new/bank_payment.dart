@@ -171,7 +171,7 @@ class _FeeBankPaymentSearchState extends State<FeeBankPaymentSearch> {
                                     data: Theme.of(context).copyWith(
                                       primaryColor: const Color(0xff053EFF),
                                       appBarTheme: const AppBarTheme(
-                                        color: Color(0xff053EFF),
+                                        backgroundColor: Color(0xff053EFF),
                                       ),
                                     ),
                                     child: child!,
@@ -695,7 +695,7 @@ class _FeeBankPaymentSearchState extends State<FeeBankPaymentSearch> {
     }
   }
 
-  getPaidAmount(FeesPayment feesPayment) {
+  double getPaidAmount(FeesPayment feesPayment) {
     double amount = 0.0;
 
     for (var element in feesPayment.transcationDetails!) {

@@ -1014,7 +1014,7 @@ class _DBStudentProfileState extends State<DBStudentProfile> {
     Navigator.pop(context);
   }
 
-  showDownloadAlertDialog(BuildContext context, String title, String fileUrl) {
+  void showDownloadAlertDialog(BuildContext context, String title, String fileUrl) {
     // set up the buttons
     Widget cancelButton = TextButton(
       child: Text("No".tr),

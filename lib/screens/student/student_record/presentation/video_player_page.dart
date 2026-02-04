@@ -9,8 +9,7 @@ class GoogleDriveVideoPlayer extends StatefulWidget {
   final String driveLink;
   final String title;
   const GoogleDriveVideoPlayer(
-      {Key? key, required this.driveLink, required this.title})
-      : super(key: key);
+      {super.key, required this.driveLink, required this.title});
 
   @override
   State<GoogleDriveVideoPlayer> createState() => _GoogleDriveVideoPlayerState();
@@ -32,7 +31,7 @@ class _GoogleDriveVideoPlayerState extends State<GoogleDriveVideoPlayer> {
     final regex = RegExp(r'd/(.*?)/');
     final match = regex.firstMatch(driveLink);
     final fileId = match?.group(1);
-    print('drive link ${driveLink}');
+    print('drive link $driveLink');
     if (fileId == null) throw Exception("Invalid Google Drive link");
     final apiKey = "AIzaSyD4Ozr2Trkmkode-ND4p0lEYrCMmKKJMDA";
     final exportUrl =

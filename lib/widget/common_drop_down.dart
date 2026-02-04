@@ -8,12 +8,12 @@ class CustomBottomSheetDropdown extends StatelessWidget {
   final String hintText;
 
   const CustomBottomSheetDropdown({
-    Key? key,
+    super.key,
     required this.items,
     required this.selectedValue,
     required this.onChanged,
     this.hintText = 'Select an option',
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

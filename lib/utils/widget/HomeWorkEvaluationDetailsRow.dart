@@ -40,7 +40,7 @@ class _HomeWorkEvaluationDetailsRowState
   // ignore: prefer_typing_uninitialized_variables
   var received;
 
-  showDownloadAlertDialog(BuildContext context, String title, String fileUrl) {
+  void showDownloadAlertDialog(BuildContext context, String title, String fileUrl) {
     // set up the buttons
     Widget cancelButton = TextButton(
       child: const Text("No"),
@@ -51,9 +51,7 @@ class _HomeWorkEvaluationDetailsRowState
     Widget yesButton = TextButton(
       child: const Text("Download"),
       onPressed: () {
-        fileUrl != null
-            ? downloadFile(fileUrl, context, title)
-            : Utils.showToast('no file found');
+        downloadFile(fileUrl, context, title);
         Navigator.of(context, rootNavigator: true).pop('dialog');
       },
     );

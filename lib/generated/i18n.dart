@@ -47,6 +47,39 @@ class S implements WidgetsLocalizations {
   @override
   // TODO: implement reorderItemUp
   String get reorderItemUp => throw UnimplementedError();
+
+  @override
+  String get copyButtonLabel => "Copy";
+
+  @override
+  String get cutButtonLabel => "Cut";
+
+  @override
+  String get pasteButtonLabel => "Paste";
+
+  @override
+  String get selectAllButtonLabel => "Select All";
+
+  @override
+  String get lookUpButtonLabel => "Look Up";
+
+  @override
+  String get searchTextFieldPlaceholderLabel => "Search";
+
+  @override
+  String get menuBarMenuLabel => "Menu";
+  
+  @override
+  String get noResultsFound => "No results found";
+  
+  @override
+  String get searchResultsFound => "Results Found";
+
+  @override
+  String get searchWebButtonLabel => "Search Web";
+
+  @override
+  String get shareButtonLabel => "Share";
 }
 
 class $en extends S {
@@ -148,8 +181,6 @@ class GeneratedLocalizationsDelegate extends LocalizationsDelegate<S> {
   }
 }
 
-String? getLang(Locale l) => l == null
-    ? null
-    : l.countryCode != null && l.countryCode!.isEmpty
+String? getLang(Locale l) => l.countryCode != null && l.countryCode!.isEmpty
         ? l.languageCode
         : l.toString();

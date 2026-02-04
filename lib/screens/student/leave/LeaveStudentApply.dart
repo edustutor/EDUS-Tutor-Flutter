@@ -63,9 +63,7 @@ class _LeaveStudentApplyState extends State<LeaveStudentApply> {
         _token = value ?? '';
         Utils.getStringValue('id').then((value) {
           setState(() {
-            _id = widget.id != null
-                ? int.parse(widget.id)
-                : int.parse(value ?? '');
+            _id = int.parse(widget.id);
             date = DateTime.now();
             initDateTime =
                 '${date?.year}-${getAbsoluteDate(date?.month ?? 0)}-${getAbsoluteDate(date?.day ?? 0)}';

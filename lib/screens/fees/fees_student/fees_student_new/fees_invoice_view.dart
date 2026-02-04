@@ -353,7 +353,7 @@ class _FeeInvoiceViewStudentState extends State<FeeInvoiceViewStudent> {
                     ),
                     Text(
                       double.parse(((getGrandTotalAmount() -
-                                      widget.feesInvoice.totalWeaver) +
+                                      (widget.feesInvoice.totalWeaver ?? 0)) +
                                   getTotalFine())
                               .toString())
                           .toStringAsFixed(2),
@@ -540,7 +540,7 @@ class _FeeInvoiceViewStudentState extends State<FeeInvoiceViewStudent> {
         ));
   }
 
-  getTotalFine() {
+  double getTotalFine() {
     double amount = 0.0;
     for (var element in widget.feesInvoice.invoiceDetails ?? []) {
       amount += (element.fine ?? 0);
@@ -564,7 +564,7 @@ class _FeeInvoiceViewStudentState extends State<FeeInvoiceViewStudent> {
   //   return amount;
   // }
 
-  getGrandTotalAmount() {
+  double getGrandTotalAmount() {
     double amount = 0.0;
 
     for (var element in widget.feesInvoice.invoiceDetails!) {

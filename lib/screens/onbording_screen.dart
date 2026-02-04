@@ -2,10 +2,8 @@ import 'package:dots_indicator/dots_indicator.dart';
 import 'package:edus_tutor/config/app_size.dart';
 import 'package:edus_tutor/screens/Login.dart';
 import 'package:edus_tutor/webview/launch_webview.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:card_swiper/card_swiper.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:url_launcher/url_launcher.dart' as UrlLauncher;
 
@@ -94,7 +92,7 @@ class _OnbordingScreenState extends State<OnbordingScreen> {
               const SizedBox(height: 16),
               DotsIndicator(
                 dotsCount: images.length,
-                position: _currentIndex,
+                position: _currentIndex.toDouble(),
                 decorator: DotsDecorator(
                   color: Colors.grey,
                   activeColor: Colors.black,
@@ -280,7 +278,7 @@ class _OnbordingScreenState extends State<OnbordingScreen> {
                               launchUrl: 'https://wiki.edustutor.com/',
                             )));
               },
-              child: Container(
+              child: SizedBox(
                   width: screenWidth(80, context),
                   height: 25,
                   child: Image.asset('assets/config/edus-wiki-logo.png')),

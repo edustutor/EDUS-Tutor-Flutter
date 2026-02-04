@@ -255,7 +255,7 @@ class _StudentHomeworkRowState extends State<StudentHomeworkRow> {
     );
   }
 
-  showAlertDialog(BuildContext context) {
+  void showAlertDialog(BuildContext context) {
     showDialog<void>(
       barrierDismissible: true,
       context: context,
@@ -584,7 +584,7 @@ class _StudentHomeworkRowState extends State<StudentHomeworkRow> {
     }
   }
 
-  showDownloadAlertDialog(BuildContext context, String title) {
+  void showDownloadAlertDialog(BuildContext context, String title) {
     // set up the buttons
     Widget cancelButton = TextButton(
       child: const Text("No"),

@@ -24,10 +24,8 @@ import 'package:edus_tutor/screens/parent/ChildDashboardScreen.dart';
 import 'package:edus_tutor/utils/FunctinsData.dart';
 import 'package:edus_tutor/utils/Utils.dart';
 import '../../utils/server/LoginService.dart';
-import '../../widget/pay_your_bill.dart';
 import '../Home.dart';
 import '../teacher/ClassSubjectAttendanceHome.dart';
-import '../teacher/academic/TeacherRoutineScreen.dart';
 import '../teacher/academic/teacher_routin.dart';
 
 class DashboardScreen extends StatefulWidget {

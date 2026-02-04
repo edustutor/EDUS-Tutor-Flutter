@@ -11,6 +11,11 @@ subprojects {
 }
 subprojects {
     project.evaluationDependsOn(":app")
+    project.pluginManager.withPlugin("com.android.library") {
+        if (project.name == 'better_player') {
+            project.android.namespace = 'com.jhomlala.better_player'
+        }
+    }
 }
 
 tasks.register("clean", Delete) {

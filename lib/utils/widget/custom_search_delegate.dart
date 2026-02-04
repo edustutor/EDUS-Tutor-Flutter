@@ -164,11 +164,11 @@ class SearchPage<T> extends SearchDelegate<T> {
               if (itemStartsWith == true && itemEndsWith == true) {
                 return value == cleanQuery;
               } else if (itemStartsWith == true) {
-                return value?.startsWith(cleanQuery) == true;
+                return value.startsWith(cleanQuery) == true;
               } else if (itemEndsWith == true) {
-                return value?.endsWith(cleanQuery) == true;
+                return value.endsWith(cleanQuery) == true;
               } else {
-                return value?.contains(cleanQuery) == true;
+                return value.contains(cleanQuery) == true;
               }
             },
           ),

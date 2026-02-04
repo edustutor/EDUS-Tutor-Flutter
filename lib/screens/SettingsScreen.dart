@@ -11,7 +11,6 @@ import 'package:edus_tutor/language/translation.dart';
 // Project imports:
 import 'package:edus_tutor/utils/CustomAppBarWidget.dart';
 import 'package:edus_tutor/utils/Utils.dart';
-import 'package:edus_tutor/utils/widget/Line.dart';
 import 'package:edus_tutor/utils/widget/ScaleRoute.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../main.dart';
@@ -314,7 +313,7 @@ class _SettingScreenState extends State<SettingScreen> {
     );
   }
 
-  showChangeLanguageAlert(BuildContext context) {
+  void showChangeLanguageAlert(BuildContext context) {
     Get.bottomSheet(
       GetBuilder<LanguageController>(
           init: LanguageController(),

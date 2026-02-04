@@ -8,7 +8,7 @@ import 'recoded_classe_card.dart';
 class RecordedClassVideosScreen extends StatelessWidget {
   final String className;
 
-  RecordedClassVideosScreen({required this.className});
+  RecordedClassVideosScreen({super.key, required this.className});
 
   final RecordedClassController _controller =
       Get.find<RecordedClassController>();

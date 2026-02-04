@@ -1,16 +1,16 @@
 // ignore: deprecated_extends_function
 class GlobalDatae {
   static var absent = 0;
-  add(){
+  void add(){
     absent++;
   }
-  sub(){
+  void sub(){
     if(absent > 0)absent--;
   }
-   getAbsent(){
+   int getAbsent(){
     return absent;
     }
-    setZero(){
+    void setZero(){
     absent = 0;
     }
 }

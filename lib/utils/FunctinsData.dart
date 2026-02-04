@@ -64,10 +64,8 @@ import 'package:edus_tutor/screens/student/studyMaterials/StydyMaterialMain.dart
 import 'package:edus_tutor/screens/teacher/ClassAttendanceHome.dart';
 import 'package:edus_tutor/screens/teacher/ClassSubjectAttendanceHome.dart';
 import 'package:edus_tutor/screens/teacher/TeacherMyAttendance.dart';
-import 'package:edus_tutor/screens/teacher/academic/AcademicsScreen.dart';
 import 'package:edus_tutor/screens/teacher/academic/MySubjectScreen.dart';
 import 'package:edus_tutor/screens/teacher/academic/SearchClassRoutine.dart';
-import 'package:edus_tutor/screens/teacher/academic/TeacherRoutineScreen.dart';
 import 'package:edus_tutor/screens/teacher/attendance/AttendanceScreen.dart';
 import 'package:edus_tutor/screens/teacher/content/AddContentScreen.dart';
 import 'package:edus_tutor/screens/teacher/content/ContentListScreen.dart';
@@ -84,7 +82,6 @@ import 'package:edus_tutor/utils/widget/ScaleRoute.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 // import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 
-import '../screens/main/student/DBStudentRoutine.dart';
 import '../screens/student/exam/exam_home.dart';
 import '../screens/student/student_record/presentation/record_class_screen.dart';
 import '../screens/teacher/academic/teacher_routin.dart';

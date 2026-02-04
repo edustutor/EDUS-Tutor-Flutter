@@ -15,10 +15,7 @@ import 'package:get/get.dart' as GETx;
 import 'package:http/http.dart' as http;
 
 // Project imports:
-import 'package:edus_tutor/config/app_config.dart';
 import 'package:edus_tutor/controller/user_controller.dart';
-import 'package:edus_tutor/screens/fees/paymentGateway/RazorPay/razorpay_service.dart';
-import 'package:edus_tutor/screens/fees/paymentGateway/paypal/paypal_payment.dart';
 import 'package:edus_tutor/utils/CustomAppBarWidget.dart';
 import 'package:edus_tutor/utils/Utils.dart';
 import 'package:edus_tutor/utils/apis/Apis.dart';
@@ -29,11 +26,7 @@ import 'package:edus_tutor/utils/model/PaymentMethod.dart';
 import 'package:edus_tutor/utils/model/UserDetails.dart';
 import 'package:edus_tutor/utils/widget/ScaleRoute.dart';
 import 'package:edus_tutor/screens/fees/widgets/fees_payment_row_widget.dart';
-import 'khalti/KhaltiPaymentScreen.dart';
-import 'xendit/XenditScreen.dart';
 
-import 'package:edus_tutor/screens/fees/paymentGateway/stripe/stripe_payment.dart'
-    as StripePage;
 // import 'package:flutter_stripe/flutter_stripe.dart' as FlutterStripe;
 
 class FeePaymentMain extends StatefulWidget {

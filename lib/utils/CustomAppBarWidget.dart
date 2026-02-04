@@ -54,7 +54,7 @@ class _CustomAppBarWidgetState extends State<CustomAppBarWidget> {
     Navigator.pop(context);
   }
 
-  buildNotificationDialog(context, String id) {
+  void buildNotificationDialog(context, String id) {
     showDialog<void>(
       barrierDismissible: true,
       context: context,
@@ -314,7 +314,7 @@ class _CustomAppBarWidgetState extends State<CustomAppBarWidget> {
     );
   }
 
-  showAlertDialog(BuildContext context) {
+  void showAlertDialog(BuildContext context) {
     // set up the buttons
     Widget cancelButton = TextButton(
       child: Text(
@@ -373,7 +373,7 @@ class _CustomAppBarWidgetState extends State<CustomAppBarWidget> {
     );
   }
 
-  showStudentProfileDialog(BuildContext context) {
+  void showStudentProfileDialog(BuildContext context) {
     showDialog<void>(
       barrierDismissible: true,
       context: context,
@@ -471,7 +471,7 @@ class _CustomAppBarWidgetState extends State<CustomAppBarWidget> {
     );
   }
 
-  showOthersProfileDialog(BuildContext context) {
+  void showOthersProfileDialog(BuildContext context) {
     showDialog<void>(
       barrierDismissible: true,
       context: context,
@@ -712,7 +712,7 @@ class _CustomAppBarWidgetState extends State<CustomAppBarWidget> {
     super.initState();
   }
 
-  logoutDialog(BuildContext context) {
+  void logoutDialog(BuildContext context) {
     // set up the buttons
     Widget cancelButton = TextButton(
       child: Text(

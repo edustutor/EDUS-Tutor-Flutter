@@ -48,7 +48,7 @@ class CustomExpansionTileCard extends StatefulWidget {
     this.isThreeLine = false,
     this.shadowColor = const Color(0xffaaaaaa),
     this.animateTrailing = false,
-  }) : assert(initiallyExpanded != null);
+  });
 
   final bool isThreeLine;
 
